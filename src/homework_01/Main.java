@@ -21,11 +21,5 @@ public class Main {
         System.out.println("Выбран для покупки горячий напиток:");
         System.out.println(dispensingHotDrink.getProduct("Кофе Latte",80, 150, 70));
         System.out.println("****************");
-
-
-
-
-
-
     }
 }
