@@ -1,6 +1,7 @@
 package homework_03;
 
-import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -15,7 +16,6 @@ public class Main {
         StudentGroup studentGroup7 = new StudentGroup("W-3975");
         StudentGroup studentGroup8 = new StudentGroup("S-4486");
         StudentGroup studentGroup9 = new StudentGroup("L-7748");
-
 
 
         Stream stream1 = new Stream("Поток № 1");
@@ -33,17 +33,17 @@ public class Main {
         stream3.addStudentGroup(studentGroup8);
         stream3.addStudentGroup(studentGroup9);
 
+        List<Stream> streams = new ArrayList<>();
+        streams.add(stream1);
+        streams.add(stream2);
+        streams.add(stream3);
 
-
-        TreeSet<Stream> streamSet = new TreeSet<>(new StreamComparator());
-        streamSet.add(stream1);
-        streamSet.add(stream2);
-        streamSet.add(stream3);
-
+        Controller controller = new Controller();
+        controller.getSortedStreams(streams);
 
         System.out.println("Список потоков, отсортированный по количеству групп:");
 
-        for (Stream stream : streamSet) {
+        for (Stream stream : streams) {
             System.out.println(stream.getStreamName() + ", групп: " + stream.getSize());
         }
     }
