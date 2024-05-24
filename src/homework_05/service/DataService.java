@@ -48,21 +48,6 @@ public class DataService {
         }
     }
 
-/*
- *     public User getUserById(Type type, Integer id){
-        boolean itsStudent = Type.STUDENT == type;
-        for (User user : userList){
-            if (user instanceof Teacher && ((Teacher) user).getTeacherId() == id){
-                return user;
-            }
-            if (user instanceof  Student && ((Student) user).getStudentId() == id){
-                return user;
-            }
-        }
-        return null;
-    }
-*/
-
 
 
     public List<Student> getAllStudent(){
@@ -105,5 +90,4 @@ public class DataService {
         }
         return students;
     }
-
 }

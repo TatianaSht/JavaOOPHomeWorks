@@ -1,10 +1,6 @@
 package homework_05;
 
-// import homework_05.controller.Controller;
-
 import homework_05.controller.Controller;
-import homework_05.model.Teacher;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -22,23 +18,5 @@ public class Main {
         controller.getAllTeacher();
         controller.createStudentsGroup(2, new ArrayList<>(Arrays.asList(2,3)));
         controller.printAllGroup();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
