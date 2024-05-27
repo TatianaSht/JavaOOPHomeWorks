@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Stream implements Iterable<StudentGroup>, Comparable<Stream> {
-
     private String streamName;
     private List<StudentGroup> studentsGroups;
 

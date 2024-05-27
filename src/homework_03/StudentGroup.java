@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.List;
 
 public class StudentGroup implements Iterable<Student> {
-
     private String groupName;
     private List<Student> students;
 

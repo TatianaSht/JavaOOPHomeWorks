@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeacherController implements UserController{
-
     private final TeacherService teacherService = new TeacherService();
     private final TeacherView teacherView = new TeacherView();
     private List<Teacher> teachersList = new ArrayList<>();

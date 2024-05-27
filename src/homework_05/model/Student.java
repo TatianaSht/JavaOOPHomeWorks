@@ -1,7 +1,6 @@
 package homework_05.model;
 
 public class Student extends User {
-
     private Integer studentId;
 
     public Student(String lastName, String firstName, String surName, Integer studentId) {
@@ -12,7 +11,6 @@ public class Student extends User {
     public Integer getStudentId() {
         return studentId;
     }
-
 
     @Override
     public String toString() {

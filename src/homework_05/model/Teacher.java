@@ -1,7 +1,6 @@
 package homework_05.model;
 
 public class Teacher extends User{
-
     private Integer teacherId;
 
     public Teacher(String lastName, String firstName, String surName, Integer teacherId) {

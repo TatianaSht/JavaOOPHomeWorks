@@ -2,7 +2,6 @@ package homework_04;
 
 public class Main {
     public static void main(String[] args) {
-
         TeacherController teacherController = new TeacherController();
         teacherController.create("Иванов", "Иван", "Иванович");
         teacherController.create("Петров", "Петр", "Петрович");

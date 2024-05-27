@@ -2,7 +2,6 @@ package homework_06.work1.original;
 
 // Квадрат
 public class Square extends Rectangle{
-
     public void setHeight(int height) {
         this.height = height;
         this.width = height;

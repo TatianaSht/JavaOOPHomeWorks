@@ -5,7 +5,6 @@ abstract public class User {
     private String firstName;
     private String surName;
 
-
     public User(String lastName, String firstName, String surName) {
         this.lastName = lastName;
         this.firstName = firstName;
@@ -35,7 +34,6 @@ abstract public class User {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
 
     @Override
     public String toString() {

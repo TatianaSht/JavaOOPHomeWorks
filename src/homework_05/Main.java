@@ -6,7 +6,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-
         Controller controller = new Controller();
         controller.createStudent("Ст1", "Ст1", "Ст1");
         controller.createStudent("Ст2", "Ст2", "Ст2");

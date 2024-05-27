@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.List;
 
 public class StudentGroupIterator implements Iterator<Student> {
-
     private int index = 0;
     private List<Student> students;
 

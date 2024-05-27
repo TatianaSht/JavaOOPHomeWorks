@@ -1,7 +1,6 @@
 package homework_03;
 
 public class Student implements Comparable<Student> {
-
     private String name;
     private int age;
 

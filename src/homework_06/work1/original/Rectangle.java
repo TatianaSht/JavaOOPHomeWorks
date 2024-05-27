@@ -2,7 +2,6 @@ package homework_06.work1.original;
 
 // Прямоугольник
 public class Rectangle {
-
     int height;
     int width;
 

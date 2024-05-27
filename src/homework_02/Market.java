@@ -4,13 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Market implements MarketBehaviour, QueueBehaviour{
-
     private final List<Buyer> buyersQueueList;
 
     public Market() {
         this.buyersQueueList = new ArrayList<>();
     }
-
 
     @Override
     public void acceptToMarket(Buyer buyer) {
@@ -18,13 +16,11 @@ public class Market implements MarketBehaviour, QueueBehaviour{
         takeInQueue(buyer);
     }
 
-
     @Override
     public void takeInQueue(Buyer buyer) {
         System.out.println("Visitor: " + buyer.getName() + "\tstate: встал в очередь");
         buyersQueueList.add(buyer);
     }
-
 
     @Override
     public void takeOrders() {
@@ -36,7 +32,6 @@ public class Market implements MarketBehaviour, QueueBehaviour{
         }
     }
 
-
     @Override
     public void giveOrders() {
         for (Buyer buyer : buyersQueueList){
@@ -46,7 +41,6 @@ public class Market implements MarketBehaviour, QueueBehaviour{
             }
         }
     }
-
 
     @Override
     public void releaseFromQueue() {
@@ -60,7 +54,6 @@ public class Market implements MarketBehaviour, QueueBehaviour{
         releaseFromMarket(actorList);
     }
 
-
     @Override
     public void releaseFromMarket(List<Buyer> buyerList) {
         for (Buyer buyer : buyerList){
@@ -68,7 +61,6 @@ public class Market implements MarketBehaviour, QueueBehaviour{
             buyersQueueList.remove(buyer);
         }
     }
-
 
     @Override
     public void update() {

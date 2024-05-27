@@ -1,12 +1,9 @@
 package homework_04;
 
 public class User {
-
     private String lastName;
     private String firstName;
     private String surName;
-
-
 
     public User(String lastName, String firstName, String surName) {
         this.lastName = lastName;
@@ -37,7 +34,6 @@ public class User {
     public void setSurName(String surName) {
         this.surName = surName;
     }
-
 
     @Override
     public String toString() {

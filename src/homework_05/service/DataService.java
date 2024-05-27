@@ -11,7 +11,6 @@ import java.util.List;
 public class DataService {
     private List<User> userList = new ArrayList<>();;
 
-
     public DataService() {
         this.userList = new ArrayList<>();
     }
@@ -19,7 +18,6 @@ public class DataService {
     public List<User> getUserList() {
         return userList;
     }
-
 
     private int getFreeId(Type type){
         Integer lastId = 1;
@@ -35,7 +33,6 @@ public class DataService {
         return lastId;
     }
 
-
     public void create(String lastName, String firstName, String surName, Type type){
         int id = getFreeId(type);
         if (type == Type.STUDENT){
@@ -47,8 +44,6 @@ public class DataService {
             userList.add(teacher);
         }
     }
-
-
 
     public List<Student> getAllStudent(){
         List<Student> studentList = new ArrayList<>();

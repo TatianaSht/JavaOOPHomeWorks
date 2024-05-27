@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) {
-
         StudentGroup studentGroup1 = new StudentGroup("M-5034");
         StudentGroup studentGroup2 = new StudentGroup("N-8421");
         StudentGroup studentGroup3 = new StudentGroup("D-6912");
@@ -16,7 +14,6 @@ public class Main {
         StudentGroup studentGroup7 = new StudentGroup("W-3975");
         StudentGroup studentGroup8 = new StudentGroup("S-4486");
         StudentGroup studentGroup9 = new StudentGroup("L-7748");
-
 
         Stream stream1 = new Stream("Поток № 1");
         stream1.addStudentGroup(studentGroup1);

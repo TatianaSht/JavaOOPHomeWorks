@@ -19,16 +19,13 @@ public class Controller {
     private final TeacherView teacherView = new TeacherView();
     private final StudentsGroupView studentsGroupView = new StudentsGroupView();
 
-
     public void createStudent(String lastName, String firstName, String surName){
         dataService.create(lastName, firstName, surName, Type.STUDENT);
     }
 
-
     public void createTeacher(String lastName, String firstName, String surName){
         dataService.create(lastName, firstName, surName, Type.TEACHER);
     }
-
 
     public void getAllStudent(){
         List<Student> userList = dataService.getAllStudent();

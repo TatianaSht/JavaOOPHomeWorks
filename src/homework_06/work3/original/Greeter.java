@@ -1,7 +1,6 @@
 package homework_06.work3.original;
 
 public class Greeter {
-
     private String formality;
 
     public String greet() {

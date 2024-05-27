@@ -6,7 +6,6 @@ import homework_06.work3.refactor.*;
 
 
 public class Main {
-
     public static void main(String[] args) {
 
         // Test work 1

@@ -31,7 +31,6 @@ public class HotDrinkVendingMachine implements  VendingMachine{
         return null;
     }
 
-
     public void addProduct(HotDrinks hotDrinks){
         hotDrinksList.add(hotDrinks);
     }
