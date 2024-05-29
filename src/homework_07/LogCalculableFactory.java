@@ -8,7 +8,7 @@ public class LogCalculableFactory implements ICalculableFactory{
     }
 
     @Override
-    public Calculable create(double realArg2, double imagArg2) {
-        return new LogCalculator(new Calculator(realArg2, imagArg2), logger);
+    public Calculable create(double numReArg2, double numImArg2) {
+        return new LogCalculator(new Calculator(numReArg2, numImArg2), logger);
     }
 }
