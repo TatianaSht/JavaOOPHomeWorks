@@ -62,5 +62,4 @@ public class ViewCalculator {
         System.out.print(message);
         return Double.parseDouble(in.nextLine());
     }
-
 }
